@@ -1,1 +1,40 @@
-<h1> This is a new page</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>点击游戏</title>
+	<style>
+		body {
+			font-size: 24px;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		}
+
+		button {
+			font-size: 48px;
+			padding: 24px 48px;
+			margin: 24px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>点击游戏</h1>
+	<button id="countButton">0</button>
+
+	<script>
+		var countButton = document.getElementById("countButton");
+		var count = 0;
+
+		countButton.addEventListener("click", function() {
+			count++;
+			countButton.innerHTML = count;
+		});
+	</script>
+</body>
+</html>
